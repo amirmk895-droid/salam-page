@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>سلام!</title>
-<style>
-body {
-  background: #eaf4ff;
-  text-align: center;
-  font-family: sans-serif;
-  color: #174477;
-}
-h1 { margin: 12px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سلام به تو</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+      padding: 25px;
+    }
+    button {
+      background: #00c853;
+      color: white;
+      border: none;
+      padding: 18px 35px;
+      border-radius: 12px;
+      font-size: 20px;
+    }
+  </style>
 </head>
 <body>
-<h1>سلام 👋</h1>
-<script>
-for (let i = 0; i < 99; i++) {
-  document.write("<h2>سلام 🌹</h2>");
-}
-</script>
+  <h1>سلام! ❤️</h1>
+  <button onclick="document.getElementById('music').play()">
+    🎵 پخش آهنگ
+  </button>
+  <audio id="music" src="music.mp3"></audio>
+
+  <div id="salams"></div>
+
+  <script>
+    for (let i = 0; i < 100; i++) {
+      document.getElementById('salams').innerHTML += '<h2>سلام</h2>';
+    }
+  </script>
 </body>
 </html>
